@@ -18,10 +18,150 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white;
+  font-family: 'Averta Bold',sans-serif;
+}
+
+main {
+  background-color: #d9f8ed;
+  background-image: linear-gradient(to bottom right, #d9f8ed, #5bf3be);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Averta - Extra Bold 1',sans-serif;
+  line-height: 72px;
+}
+
+.url {
+  width: 35%;
+}
+
+.title-bubble{
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 60%;
+  height: 20%;
+  margin: 20px 20px;
+  border: 3px solid black;
+  box-shadow: 10px 10px #40dda6;
+}
+
+.content-bubble {
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 60%;
+  height: 450px;
+  margin: 20px 20px;
+  border: 3px solid black;
+  box-shadow: 10px 10px #40dda6;
+}
+
+.project-table {
+  border-collapse: collapse;
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  padding: 50px;
+}
+
+.page {
+  align-items:center;
+  justify-content: center;
+  margin-left: 450px;
+  margin-top: 95px;
+}
+
+.project-table th, td {
+  padding-left: 7px;
+  text-align: left;
+}
+
+.project-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 22px;
+  font-family: 'Averta - Extra Bold 1',sans-serif;
+  color: #40dda6;
+  /* background-color: #d9f8ed; */
+}
+
+.project-table td {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  font-weight: bold;
+  font-family: 'Averta Regular',sans-serif;
+}
+
+.hover-info {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: #271da4;
+  position: relative;
+}
+
+.hover-info::after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #40dda6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.hover-info:hover::after {
+  transform: scaleX(1);
+}
+
+.hover-info:link{
+  color: #40dda6;
+}
+
+/* Project Page Info */
+
+.founder {
+  padding-top: 12px;
+  font-size: 22px;
+  font-family: 'Averta - Extra Bold 1',sans-serif;
+  color: #40dda6;
+}
+
+.desc {
+  font-size: 22px;
+  color: #40dda6;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+.info {
+  width: 50%;
+  max-width: 90%;
+  display: inline-block;
+}
+
+.wrapper {
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 100px;
+}
+
+.container {
+  margin-left: 700px;
 }
